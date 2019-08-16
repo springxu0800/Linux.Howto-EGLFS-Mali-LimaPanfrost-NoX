@@ -539,6 +539,8 @@ and will work compatibly for the a72 rpi4 as well.
 
 #### 64BIT BUGS END SECTION
 
+## Continuing QT5 install section.
+
 
 
 
