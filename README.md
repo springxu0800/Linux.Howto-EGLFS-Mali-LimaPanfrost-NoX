@@ -497,7 +497,7 @@ diff -Nuar qmake.conf.original qmake.conf > ~/VC4-NOX-KIT/QT/qt5-debian-aarch64_
  QMAKE_CXXFLAGS          = $$QMAKE_CFLAGS
  
 -DISTRO_OPTS            += hard-float
-+DISTRO_OPTS            += 
++DISTRO_OPTS            += aarch64
  DISTRO_OPTS            += deb-multi-arch
  
  EGLFS_DEVICE_INTEGRATION = eglfs_kms
