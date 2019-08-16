@@ -2,12 +2,12 @@
 ---
 ---
 
-*Building DRM,MESA,KMSCUBE and QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.
+*Building DRM,MESA,KMSCUBE and QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.*
 
 
-*This guide was made for Debian aarch64 / arm64, adjust to your OS and ARCH/Bitness as needed, 
+*This guide was made for Debian aarch64 / arm64, adjust to your OS and ARCH/Bitness as needed.* 
 
-*For Example, for Raspbian, change:
+*For Example, for Raspbian, change:*
 ```
   --libdir=/usr/lib/aarch64-linux-gnu 
 ```
@@ -18,9 +18,9 @@
 
 ---
 ### SETENV 
-*Make a new workdir called VCKIT, this will be our DESTDIR rootdir, which will
-*hold everything for packaging instead of installing it directly after a build.
-*After a directed DESTDIR install you can install it locally too if desired.
+*Make a new workdir called VCKIT, this will be our DESTDIR rootdir, which will*
+*hold everything for packaging instead of installing it directly after a build.*
+*After a directed DESTDIR install you can install it locally too if desired.*
 
 
 
