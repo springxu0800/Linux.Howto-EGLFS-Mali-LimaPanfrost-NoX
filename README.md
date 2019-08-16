@@ -93,8 +93,7 @@ cd ~/VC4-NOX-KIT/DRM
 tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
 ```
-
-*Select keyboard key "enter"*
+*Select "enter" key if needed.*
 
 *At this point kms and other testing tools have been installed such as:*
    * /usr/bin/kmstest         #that should show: 'vc4' ...done, then main: All ok!
@@ -200,7 +199,7 @@ echo Destination Directory = $DESTDIR
 ninja -C build install
 ```
 
-*select keyboard key "enter"*
+*Select "enter" key if needed.*
 
 *make a tar.xz*
 
@@ -211,7 +210,7 @@ unset DESTDIR
 ```
 
 
-*select keyboard key "enter" if needed*
+*Select "enter" key if needed.*
   *You can inspect the installed dirs or tar.xz* 
     *and/or **OPTIONALLY** install it local too*
 
@@ -219,7 +218,7 @@ unset DESTDIR
 cd  mesa
 sudo -E ninja -C build install
 ```
-*select keyboard key "enter"*
+*Select "enter" key if needed.*
 
 *FINISH UP and Go back to main build dir*
 
@@ -246,7 +245,7 @@ meson build \
 --libdir=/usr/lib/aarch64-linux-gnu
 ```
 
-*Select keyboard key "enter" if needed*
+*Select "enter" key if needed.*
 
 *Build and install it to ~/VC4-NOX-KIT/KMSCUBE/kmscube-$git_describe_tags_DIR-rpi-vc4*
 
@@ -257,7 +256,7 @@ echo Destination Directory = $DESTDIR
 ninja -C build install
 ```
 
-*select keyboard key "enter" if needed.*
+*Select "enter" key if needed.*
 
 *make a tar.xz*
 
@@ -268,7 +267,7 @@ tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
 ```
 
-*Select keyboard key "enter" if needed*
+*Select "enter" key if needed.*
   *You can inspect the installed dirs or tar.xz* 
     *and/or **OPTIONALLY** install it local too*
 
@@ -277,7 +276,7 @@ cd  kmscube
 sudo -E ninja -C build install
 ~~~
 
-*Select keyboard key "enter" if needed*
+*Select "enter" key if needed.*
 
 *Test kmscube by running it and note the second section: OpenGl ES 2.X...*
 *This is my latest output*
@@ -568,7 +567,7 @@ unset DESTDIR
 
 ```
 
-* select keyboard key "enter" if needed
+*Select "enter" key if needed.*
 
 * You can inspect the installed dirs or tar.xz 
 **and/or **OPTIONALLY** install it local too*, since DESTDIR is unset.
