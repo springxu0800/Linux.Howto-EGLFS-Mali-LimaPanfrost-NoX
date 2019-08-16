@@ -1,0 +1,2 @@
+# RPI-NOX-VC4
+Howto: build DRM/MESA/GSTREAMER/KMSCUBE/QT5/MYTHTV with VC4,  without X11 for RPi3/4
