@@ -18,7 +18,7 @@
 
 ---
 ### SETENV 
-*Make a new workdir called VCKIT, this will be our DESTDIR rootdir, which will*
+*Make a new workdir called VC4-NOX-KIT, this will be our DESTDIR rootdir, which will*
 *hold everything for packaging instead of installing it directly after a build.*
 *After a directed DESTDIR install you can install it locally too if desired.*
 
