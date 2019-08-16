@@ -420,11 +420,11 @@ cd .. && rm -rfv BUILDQT5 && mkdir -v BUILDQT5 && cd BUILDQT5
 screen -aX make -jX
 ```
 
-### SKIP DOWN IF NOT COMPILING ON 64BIT
 ### QT DEBIAN AARCH 64BIT BUG
+  ### SKIP DOWN IF NOT COMPILING ON 64BIT
                                                                                                                                                                                                             
 
-You will get an error like so or similiar:
+You might get an error like so or similiar:
 
 ```
 Project ERROR: Cannot run target compiler '/usr/bin/g++'. Output:
@@ -445,18 +445,25 @@ To fix this, change the raspi3-vc4 device spec and remove the default
 options designed for the arm8 in 32bit mode, along with removing the 
 
 
-*Debian 64bit QT-5.9.8 "linux-rasp-pi3-vc4-g++/qmake.conf" example patch* 
+*Debian 64bit QT-5.9.8 "linux-rasp-pi3-vc4-g++/qmake.conf" example setup/patch* 
 
 ```
 cd ../qtbase/mkspecs/devices/linux-rasp-pi3-vc4-g++/
 cp -av qmake.conf qmake.conf.original
-
+```
 *inline edit qmake.conf
+
+```
 sed -i 's/-mfpu=crypto-neon-fp-armv8//g' qmake.conf
 sed -i 's/hard-float//g' qmake.conf
+```
 
 *make a patch example
+```
 diff -Nuar qmake.conf.original qmake.conf > ~/VC4-NOX-KIT/QT/qt5-debian-aarch64_linux-rasp-pi3-vc4-g++_qmake.conf.patch
+```
+
+*patch contents example
 
 ```
 --- qmake.conf.original	2019-08-16 09:51:19.544346156 -0400
@@ -479,39 +486,35 @@ diff -Nuar qmake.conf.original qmake.conf > ~/VC4-NOX-KIT/QT/qt5-debian-aarch64_
 
 
 
-
 *Abstract Summary*
 *When building 64bit qt-5.9.8 on debian buster and more likely, a smallish bug
 in qt occurs with the default compiler options for the rasp-pi3-vc4 device
 configuration. This is because it was designed for 32 bit and has not been 
 updated for 64bit, this will patch it until its updated properly upstream.
 
-Basically its that the compiler is confused by all the mfpu/float options
+*Basically its that the compiler is confused by all the mfpu/float options
 that are already implied in gcc aarch64 standard specs elsewhere.
 Qt had anticpated this with the trap to catch an entry for aarch64 when found
 in, but its incomplete for 64bit. 
 
-The problem is, when softfp or hardfp is found, on aarch64;
-That is A NO GO for compiler, cause it deduces already
-that specifying a SOFTFP option for aarch64 is an ERR and I would agree with GCC
-that it should be an error or kickback at least. 
+*The problem is, when softfp or hardfp is found, on aarch64; That is A NO GO
+for compiler, cause it deduces already that specifying a SOFTFP option for aarch64 
+is an ERR and I would agree with GCC that it should be an error or kickback at least. 
 *If someone really wants to enable softfp on a modern HARDFP HW enabled arm8
-*they can just update all GCC specs themselves and redefine it as needed, 
-*in that weird case of where some person wants to run ancient code on 
-*new arm processors, likely because they dont have access to the source code
-*to recompile. Else they should just recompile on new hardware with hardfp, duh.
-
+they can just update all GCC specs themselves, and redefine it as needed. 
+In that weird case of where some person wants to run ancient code on 
+new arm processors, likely because they dont have access to the source code
+to recompile. Else, they should just recompile on new hardware with hardfp, duh.
 
 *In summary: we needed the float options removed for arm64
 and for identcation of arm/aarch64/arm64 better.
-Along with NEVER specifying FP info with CFLAGS for aarch64/arm64 that intended
-for mass production "cpu shared" builds or whatever its called.*
-
-
-https://gcc.gnu.org/onlinedocs/gcc-8.1.0/gcc/AArch64-Options.html
+*Along with NEVER specifying FP info with CFLAGS for aarch64/arm64 that intended
+for mass production "cpu shared" builds or whatever its called.
 
 "fp Enable floating-point instructions. 
 This is on by default for all possible values for options -march and -mcpu."
+https://gcc.gnu.org/onlinedocs/gcc-8.1.0/gcc/AArch64-Options.html
+
 
 **Use armv8a because, using armv8.1-a, would work for RPi3/4 
 *except that it likely would *NOT WORK on the RPi3A+*, because that is a
@@ -615,7 +618,7 @@ Format: Version: 3.0 Profile: 0 Swap behavior: 0 Buffer size (RGB): 8,8,8
 
 
 
-
+## End QT5 Section
 
 
 
