@@ -651,8 +651,7 @@ Referenced Sources:
 
 ---
 
-Behold our representative!
-    ![Tux, the Linux mascot](/Tux-shaded.png)
+                          ![Tux, the Linux mascot](/Tux-shaded.png)
 
 ---
 
