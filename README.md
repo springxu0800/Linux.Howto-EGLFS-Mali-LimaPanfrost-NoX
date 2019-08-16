@@ -597,7 +597,7 @@ cd ~/VC4-NOX-KIT/QT
 
 ```
 
-*THIS POINT DOWN IS UNFINISHED*
+***BEGIN THIS SECTION IS INCOMPLETE***
 
 ```
 
@@ -615,6 +615,12 @@ cd QTTOOLS
 
 
 #Setup Env/Test and run qtdiags
+***END THIS SECTION IS INCOMPLETE***
+
+
+
+
+
 #to debug set this
 export QT_DEBUG_PLUGINS=1
 
