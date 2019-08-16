@@ -11,7 +11,7 @@
 ```
   --libdir=/usr/lib/aarch64-linux-gnu 
 ```
-*to
+ *to*
 ```
  --libdir=/usr/lib/arm-linux-gnueabihf    
 ```
