@@ -64,29 +64,27 @@ meson build \
 
 
 *Build drm 
+
 ```
-
 ninja -C build
-
 ```
 
 *Install drm to ~/VC4-NOX-KIT/DRM/$git_describe_tags_DIR-rpi-vc4
 
+```
 export DESTDIR=~/VC4-NOX-KIT/DRM/`git describe --tags --always`-rpi-vc4 
 echo Destination Directory = $DESTDIR
 ninja -C build install
-
 ```
 
 *select keyboard key "enter" if needed*
 *make a tar.xz*
 
-```
 
+```
 cd ~/VC4-NOX-KIT/DRM 
 tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
-
 ```
 
 *select keyboard key "enter"*
@@ -104,16 +102,13 @@ unset DESTDIR
 ```
 cd drm
 sudo -E ninja -C build install
-
 ```
 
 
 *change dir*
 
 ```
-
 cd ~/VC4-NOX-KIT 
-
 ```
 
 *This section complete
@@ -123,10 +118,7 @@ cd ~/VC4-NOX-KIT
 
 
 *Not sure which HEADER EXCLUSION METHOD is needed, so all for now*
-
-
 ```
-
 CPPFLAGS=-DMESA_EGL_NO_X11_HEADERS 
 CFLAGS=-DMESA_EGL_NO_X11_HEADERS
 MESA_EGL_NO_X11_HEADERS=1
@@ -188,23 +180,19 @@ Message: Configuration summary:
 *Build mesa and install it to ~/VC4-NOX-KIT/MESA/mesa-$git_describe_tags_DIR-rpi-vc4
 
 ```
-
 ninja -C build
 export DESTDIR=~/VC4-NOX-KIT/MESA/mesa-`git describe --tags --always`-rpi-vc4 
 echo Destination Directory = $DESTDIR
 ninja -C build install
-
 ```
 
 *select keyboard key "enter"*
 *make a tar.xz*
 
 ```
-
 cd ~/VC4-NOX-KIT/MESA 
 tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
-
 ```
 
 
@@ -213,30 +201,25 @@ unset DESTDIR
 *and/or optionally install it local too*
 
 ```
-
 cd  mesa
 sudo -E ninja -C build install
-
 ```
 *select keyboard key "enter"*
 
 *Go back to main build dir*
 
 ```
-
 cd ~/VC4-NOX-KIT 
-
 ```
+
 *This section complete
 ---
 
 
-##KMSCUBE##
+## KMSCUBE
 
 ```
-
 mkdir -v ~/VC4-NOX-KIT/KMSCUBE
-
 cd ~/VC4-NOX-KIT/KMSCUBE
 
 git clone https://gitlab.freedesktop.org/mesa/kmscube
@@ -245,21 +228,17 @@ cd kmscube
 meson build \
 --prefix=/usr \
 --libdir=/usr/lib/aarch64-linux-gnu
-
 ```
 
 *Select keyboard key "enter" if needed*
 
-
 *Build and install it to ~/VC4-NOX-KIT/KMSCUBE/kmscube-$git_describe_tags_DIR-rpi-vc4
 
 ```
-
 ninja -C build
 export DESTDIR=~/VC4-NOX-KIT/KMSCUBE/kmscube-`git describe --tags --always`-rpi-vc4 
 echo Destination Directory = $DESTDIR
 ninja -C build install
-
 ```
 
 *select keyboard key "enter"*
@@ -268,28 +247,21 @@ ninja -C build install
 
 
 ```
-
 cd ~/VC4-NOX-KIT/KMSCUBE
 tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
-
-
 ```
 
 * select keyboard key "enter" if needed
-
 * You can inspect the installed dirs or tar.xz 
 * and/or optionally install it local too
 
 ~~~
-
 cd  kmscube
 sudo -E ninja -C build install
-
 ~~~
+
 *select keyboard key "enter"
-
-
 
 *test kmscube by running it and note the second section: OpenGl ES 2.X...
 *This is my latest output
@@ -306,18 +278,15 @@ sudo -E ninja -C build install
 * Go back to main build dir
 
 ```
-
 cd ~/VC4-NOX-KIT 
-
 ```
 
 *This section complete
 ---
 
+##QT-5.9.8
 
-##QT-5.9.8##
-
-#SET ENV#
+#SET ENV
 
 *Change your PREFIX/LIBDIR or CROSS COMPILE OPTIONS as needed,this is setup for
 native compiles.
