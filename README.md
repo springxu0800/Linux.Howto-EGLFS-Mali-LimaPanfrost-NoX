@@ -112,7 +112,7 @@ unset DESTDIR
 cd drm
 sudo -E ninja -C build install
 ```
-
+*and/or
 *FINISH UP DRM BUILD
 *change dir
 ```
@@ -223,7 +223,8 @@ sudo -E ninja -C build install
 ```
 *Select "enter" key if needed.*
 
-*FINISH UP and Go back to main build dir*
+*and/or
+*FINISHING UP and Go back to main build dir*
 
 ```
 cd ~/VC4-NOX-KIT 
@@ -292,7 +293,7 @@ sudo -E ninja -C build install
       extensions: "GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_t...
 ```
 
-
+*and/or
 *Finish and Go back to main build dir*
 
 ```
@@ -583,7 +584,7 @@ make install
 
 ```
 
-
+*and/or
 *Go back to main qt build dir
 
 ```
