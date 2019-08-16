@@ -348,9 +348,8 @@ PKG_CONFIG_SYSROOT_DIR=/
 
 
 ```
-
-mkdir BUILDQT5
-cd BUILDQT5
+mkdir -pv ~/VC4-NOX-KIT/QT/BUILDQT5
+cd ~/VC4-NOX-KIT/QT/BUILDQT5
 
 ../qtbase/configure \
 -prefix ${PREFIX} \
