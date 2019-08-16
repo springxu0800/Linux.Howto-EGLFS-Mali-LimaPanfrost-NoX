@@ -1,4 +1,4 @@
-# RPI-NOX-VC4
+# RPI-NOX-VC4 
 Howto: build DRM/MESA/GSTREAMER/KMSCUBE/QT5/MYTHTV with VC4,  without X11 for RPi3/4
 aka VC4-NOX-KIT
 
@@ -14,8 +14,8 @@ to
  --libdir=/usr/lib/arm-linux-gnueabihf    
 ```
 
-----------------------------------------------------------------------------------
-#SETENV#
+---
+### SETENV 
 *make a new workdir called VCKIT, this will be our DESTDIR rootdir, which will*
 *hold everything for packaging instead of installing it directly after a build.*
 *After a directed DESTDIR install you can install it locally too if desired*
@@ -31,7 +31,7 @@ mkdir -pv ~/VC4-NOX-KIT && cd ~/VC4-NOX-KIT
 
 
 ---
-##DRM##
+## DRM
 
 ```
 mkdir -pv DRM && cd DRM
@@ -122,7 +122,7 @@ cd ~/VC4-NOX-KIT
 
 
 
-##MESA##
+## MESA
 
 *Not sure which HEADER EXCLUSION METHOD is needed, so all for now*
 
