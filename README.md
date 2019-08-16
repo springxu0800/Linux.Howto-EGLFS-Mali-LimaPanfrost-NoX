@@ -17,9 +17,9 @@ to
 
 ---
 ### SETENV 
-*make a new workdir called VCKIT, this will be our DESTDIR rootdir, which will*
-*hold everything for packaging instead of installing it directly after a build.*
-*After a directed DESTDIR install you can install it locally too if desired*
+*Make a new workdir called VCKIT, this will be our DESTDIR rootdir, which will
+*hold everything for packaging instead of installing it directly after a build.
+*After a directed DESTDIR install you can install it locally too if desired.
 
 
 
@@ -55,9 +55,9 @@ meson build \
 
 ```
 
-*select keyboard key "enter"*
+*Select keyboard key "enter"*
 
-*look for this in your output*
+*Look for this in your output*
         Message: libdrm will be compiled with:
 
         Message:   libkms         true
@@ -88,7 +88,7 @@ tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
 ```
 
-*select keyboard key "enter"*
+*Select keyboard key "enter"*
 
 *At this point kms and other testing tools have been installed such as:*
    * /usr/bin/kmstest         #that should show: 'vc4' ...done, then main: All ok!
@@ -97,8 +97,8 @@ unset DESTDIR
    * plus more i didnt try*
 
 
-*You can inspect the installed dirs or tar.xz* 
-*and/or optionally install it local too*
+*You can inspect the installed dirs or tar.xz 
+*and/or optionally install it local too
 
 ```
 cd drm
@@ -106,7 +106,7 @@ sudo -E ninja -C build install
 ```
 
 
-*change dir*
+*change dir
 
 ```
 cd ~/VC4-NOX-KIT 
@@ -119,7 +119,7 @@ cd ~/VC4-NOX-KIT
 ## MESA
 
 
-*Not sure which HEADER EXCLUSION METHOD is needed, so all for now*
+*Not sure which HEADER EXCLUSION METHOD is needed, so all for now
 ```
 CPPFLAGS=-DMESA_EGL_NO_X11_HEADERS 
 CFLAGS=-DMESA_EGL_NO_X11_HEADERS
@@ -149,7 +149,9 @@ meson build \
 
 ```
 
-*observe output* *select "enter" key if needed.*
+*Observe output
+*Select "enter" key if needed.
+
 
 Message: Configuration summary:
                 prefix:          /usr
@@ -233,7 +235,7 @@ meson build \
 --libdir=/usr/lib/aarch64-linux-gnu
 ```
 
-*Select keyboard key "enter" if needed*
+*Select keyboard key "enter" if needed
 
 *Build and install it to ~/VC4-NOX-KIT/KMSCUBE/kmscube-$git_describe_tags_DIR-rpi-vc4
 
@@ -244,8 +246,8 @@ echo Destination Directory = $DESTDIR
 ninja -C build install
 ```
 
-*select keyboard key "enter"*
-*make a tar.xz*
+*select keyboard key "enter"
+*make a tar.xz
 
 
 
@@ -255,7 +257,7 @@ tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
 ```
 
-* select keyboard key "enter" if needed
+* Select keyboard key "enter" if needed
 * You can inspect the installed dirs or tar.xz 
 * and/or optionally install it local too
 
@@ -264,9 +266,9 @@ cd  kmscube
 sudo -E ninja -C build install
 ~~~
 
-*select keyboard key "enter"
+*Select keyboard key "enter"
 
-*test kmscube by running it and note the second section: OpenGl ES 2.X...
+*Test kmscube by running it and note the second section: OpenGl ES 2.X...
 *This is my latest output
 
     OpenGL ES 2.x information:
@@ -278,7 +280,7 @@ sudo -E ninja -C build install
 
 
 
-* Go back to main build dir
+*Go back to main build dir
 
 ```
 cd ~/VC4-NOX-KIT 
@@ -388,34 +390,34 @@ cd BUILDQT5
 ```
 
 
-*Carefully observe output summary and make changes or fix errors/deps as needed.*
-*eg, perhaps you dont like all the input support, so you remove the stanzas*
+*Carefully observe output summary and make changes or fix errors/deps as needed.
+*eg, perhaps you dont like all the input support, so you remove the stanzas
 
 ``
 -libinput \
 -mtdev \
 ``
 
-*Clean the builddir and re-run*
-*Any changes you make should make you reset the configure and re-run fresh*
-*If I'm being redundant its because I want to save you un-needed time/trouble.*
-*Make any adjustments needed, cd .. , remove BUILDQT5 dir, recreate BUILDQT5* 
-*re-run configure statement again, corrected as needed, eg,:*
-    *QUICK CLEAN cmds*
+*Clean the builddir and re-run
+*Any changes you make should make you reset the configure and re-run fresh
+*If I'm being redundant its because I want to save you un-needed time/trouble.
+*Make any adjustments needed, cd .. , remove BUILDQT5 dir, recreate BUILDQT5 
+*re-run configure statement again, corrected as needed, eg,:
+    **QUICK CLEAN cmds**
 
 ```
 cd .. && rm -rfv BUILDQT5 && mkdir -v BUILDQT5 && cd BUILDQT5
 
 ```
 
-**The above cmd will blow out your old BUILDQT5 dir and reset you up for a new config run.**
+**The above cmd will blow out your old BUILDQT5 dir and reset you up for a new config run.
 
 *Then, run configure again* and then *build* or *fix* *reset* *repeat* as-needed.
 
 **Once the configuration is perfect for you continue on and build it**
 
-*Better start a screen to build this in, so it doesnt die over a link on you*
-*Change -jX below, to -jNCPUS or -j2 for dual core or j4 for quad core cpus, etc.
+*Better start a screen to build this in, so it doesnt die over a link on you.
+*Change -jX below, to -j(NCPUS) eg, -j2 for dual core or j4 for quad core cpus, etc.
 
 ```
 screen -aX make -jX
@@ -425,7 +427,7 @@ screen -aX make -jX
   ### SKIP DOWN IF NOT COMPILING ON 64BIT
                                                                                                                                                                                                             
 
-You might get an error like so or similiar:
+*You might get an error like so or similiar:
 
 ```
 Project ERROR: Cannot run target compiler '/usr/bin/g++'. Output:
