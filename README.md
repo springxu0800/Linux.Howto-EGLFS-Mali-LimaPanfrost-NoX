@@ -440,9 +440,11 @@ screen -aX make -jX
 ```
 
 ### QT DEBIAN AARCH 64BIT BUG
-  ### SKIP DOWN IF NOT COMPILING ON 64BIT
-                                                                                                                                                                                                            
-
+  ### IF YOU ARE ON 32BIT OS, SKIP DOWN TO THE SECTION TITLED:
+  
+    **## Continuing QT5 install section.**
+  
+                                                                                                                                                                                                   
 *You might get an error like so or similiar:*
 
 ```
@@ -461,7 +463,7 @@ Maybe you forgot to setup the environment?
 ```
 
 To fix this, change the raspi3-vc4 device spec and remove the default
-options designed for the arm8 in 32bit mode, along with removing the 
+options designed for the arm8 in 32bit mode.
 
 
 *Debian 64bit QT-5.9.8 "linux-rasp-pi3-vc4-g++/qmake.conf" example setup/patch* 
@@ -546,10 +548,11 @@ and will work compatibly for the a72 rpi4 as well.
 
 #### 64BIT BUGS END SECTION
 
+
+
+
+
 ## Continuing QT5 install section.
-
-
-
 
 *Install QT5 to ~/VC4-NOX-KIT/QT/qt-$git_describe_tags_DIR-rpi-vc4*
 
