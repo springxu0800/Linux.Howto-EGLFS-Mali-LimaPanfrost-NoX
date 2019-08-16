@@ -638,6 +638,7 @@ Referenced Sources:
 <https://wiki.gentoo.org/wiki/Safe_CFLAGS#ARM>
 <https://en.wikipedia.org/wiki/Raspberry_Pi>
 <https://wiki.qt.io/RaspberryPi2EGLFS>
+<https://www.markdownguide.org/cheat-sheet/>
 
 *for future use building a new kernel too
 <https://github.com/sakaki-/bcm2711-kernel-bis>
@@ -653,7 +654,7 @@ Referenced Sources:
 
 
 
-    ![Tux, the Linux mascot](/assets/images/tux.png)
+    ![Tux, the Linux mascot](/assets/images/Tux-shaded.svg)
 
 
 
