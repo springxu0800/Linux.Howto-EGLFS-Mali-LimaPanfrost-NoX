@@ -623,23 +623,23 @@ Format: Version: 3.0 Profile: 0 Swap behavior: 0 Buffer size (RGB): 8,8,8
 
 Referenced Sources:
 
-https://github.com/anholt/mesa/wiki
-https://github.com/anholt/mesa/wiki/Building-Mesa-for-VC4
-https://github.com/anholt/mesa/wiki/VC4-complete-Raspbian-upgrade
-https://mesonbuild.com/Quick-guide.html
-https://gcc.gnu.org/onlinedocs/gcc-8.1.0/gcc/AArch64-Options.html
-https://wiki.gentoo.org/wiki/Safe_CFLAGS#ARM
-https://en.wikipedia.org/wiki/Raspberry_Pi
-https://wiki.qt.io/RaspberryPi2EGLFS
+<https://github.com/anholt/mesa/wiki>
+<https://github.com/anholt/mesa/wiki/Building-Mesa-for-VC4>
+<https://github.com/anholt/mesa/wiki/VC4-complete-Raspbian-upgrade>
+<https://mesonbuild.com/Quick-guide.html>
+<https://gcc.gnu.org/onlinedocs/gcc-8.1.0/gcc/AArch64-Options.html>
+<https://wiki.gentoo.org/wiki/Safe_CFLAGS#ARM>
+<https://en.wikipedia.org/wiki/Raspberry_Pi>
+<https://wiki.qt.io/RaspberryPi2EGLFS>
 
 *for future use building a new kernel too
-https://github.com/sakaki-/bcm2711-kernel-bis
+<https://github.com/sakaki-/bcm2711-kernel-bis>
 
 *potential example uses, something like
-https://olivierschonken.github.io/first/test/update/2017/10/11/64-bit-pi-with-gallium-3D/
+<https://olivierschonken.github.io/first/test/update/2017/10/11/64-bit-pi-with-gallium-3D/>
 
 *my own intentions
-https://sourceforge.net/projects/mythtv-nox/files/
+<https://sourceforge.net/projects/mythtv-nox/files/>
 
 
 
