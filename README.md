@@ -111,7 +111,8 @@ sudo -E ninja -C build install
 cd ~/VC4-NOX-KIT 
 ```
 
-*This section complete
+*DRM section complete
+
 ---
 
 ## MESA
@@ -212,7 +213,8 @@ sudo -E ninja -C build install
 cd ~/VC4-NOX-KIT 
 ```
 
-*This section complete
+*MESA section complete
+
 ---
 
 
@@ -281,12 +283,13 @@ sudo -E ninja -C build install
 cd ~/VC4-NOX-KIT 
 ```
 
-*This section complete
+*KMS section complete
+
 ---
 
-##QT-5.9.8
+## QT-5.9.8
 
-#SET ENV
+### SET ENV
 
 *Change your PREFIX/LIBDIR or CROSS COMPILE OPTIONS as needed,this is setup for
 native compiles.
@@ -417,11 +420,9 @@ cd .. && rm -rfv BUILDQT5 && mkdir -v BUILDQT5 && cd BUILDQT5
 screen -aX make -jX
 ```
 
-
 ### SKIP DOWN IF NOT COMPILING ON 64BIT
 ### QT DEBIAN AARCH 64BIT BUG
-
-                                                                                                                                                                                                                   
+                                                                                                                                                                                                            
 
 You will get an error like so or similiar:
 
