@@ -291,9 +291,6 @@ cd ~/VC4-NOX-KIT
 ---
 
 ## QT-5.9.8
-
-### SET ENV
-
 *Change your PREFIX/LIBDIR or CROSS COMPILE OPTIONS as needed,this is setup for
 native compiles.
 
@@ -302,13 +299,13 @@ mkdir -v ~/VC4-NOX-KIT/QT
 cd ~/VC4-NOX-KIT/QT
 ```
 
-
 ```
 
 git clone -b 5.9.8 --single-branch https://github.com/qt/qtbase.git
 
 ```
 
+### SET ENV
 ```
 
 PREFIX=/opt/qt-5.9.8-rpi3-vc4
