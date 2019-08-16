@@ -650,10 +650,9 @@ Referenced Sources:
 <https://sourceforge.net/projects/mythtv-nox/files/>
 
 ---
-
                           ![Tux, the Linux mascot](/Tux-shaded.png)
 
-Tux
+
 ---
 
 
