@@ -4,7 +4,7 @@
 
 *Building DRM,MESA,KMSCUBE and QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.*
 
-**This guide was written with for building as a regular 'user', when the command 'sudo' for OPTIONAL system installation, you will need your root pwd unless your admin has authorized your account otherwise.**
+**This guide was written with for building as a regular 'user'. For "OPTIONAL" system installation using 'sudo', you will need your root pwd unless your admin has authorized your sudo account otherwise.**
 
 
 *This guide was made for Debian aarch64 / arm64, adjust to your OS and ARCH/Bitness as needed.* 
