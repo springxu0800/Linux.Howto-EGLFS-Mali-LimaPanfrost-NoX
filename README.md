@@ -651,10 +651,9 @@ Referenced Sources:
 
 
 
+          Behold my representative!
 
-
-
-    ![Tux, the Linux mascot](/Tux-shaded.svg)
+    ![Tux, the Linux mascot](/Tux-shaded.png)
 
 
 
