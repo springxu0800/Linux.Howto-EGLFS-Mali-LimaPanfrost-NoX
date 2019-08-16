@@ -650,6 +650,7 @@ Referenced Sources:
 <https://sourceforge.net/projects/mythtv-nox/files/>
 
 ---
+Sir Tux.
                           ![Tux, the Linux mascot](/Tux-shaded.png)
 
 
