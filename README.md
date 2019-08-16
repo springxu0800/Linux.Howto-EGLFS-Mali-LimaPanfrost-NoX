@@ -293,7 +293,7 @@ cd ~/VC4-NOX-KIT
 ---
 
 ## QT-5.9.8
-*Change your PREFIX/LIBDIR or CROSS COMPILE OPTIONS as needed,this is setup for*
+*Change your PREFIX/LIBDIR and/or CROSS COMPILE OPTIONS as needed, as this is setup for*
 *native compiles.*
 
 ```
