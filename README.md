@@ -155,6 +155,7 @@ meson build \
 *Observe output*
 
 *Select "enter" key if needed.*
+
 *Example mesa build configuration output*
 ```
 Message: Configuration summary:
@@ -185,16 +186,20 @@ Message: Configuration summary:
         Shared-glapi:    yes
 ```
 
-*Build mesa and install it to ~/VC4-NOX-KIT/MESA/mesa-$git_describe_tags_DIR-rpi-vc4*
+*Build mesa
 
 ```
 ninja -C build
+```
+*Install Mesa to ~/VC4-NOX-KIT/MESA/mesa-$git_describe_tags_DIR-rpi-vc4*
+```
 export DESTDIR=~/VC4-NOX-KIT/MESA/mesa-`git describe --tags --always`-rpi-vc4 
 echo Destination Directory = $DESTDIR
 ninja -C build install
 ```
 
 *select keyboard key "enter"*
+
 *make a tar.xz*
 
 ```
@@ -205,8 +210,8 @@ unset DESTDIR
 
 
 *select keyboard key "enter" if needed*
-*You can inspect the installed dirs or tar.xz* 
-*and/or optionally install it local too*
+  *You can inspect the installed dirs or tar.xz* 
+    *and/or optionally install it local too*
 
 ```
 cd  mesa
@@ -251,6 +256,7 @@ ninja -C build install
 ```
 
 *select keyboard key "enter" if needed.*
+
 *make a tar.xz*
 
 
@@ -261,8 +267,8 @@ unset DESTDIR
 ```
 
 *Select keyboard key "enter" if needed*
-*You can inspect the installed dirs or tar.xz* 
-*and/or optionally install it local too*
+  *You can inspect the installed dirs or tar.xz* 
+    *and/or optionally install it local too*
 
 ~~~
 cd  kmscube
@@ -328,7 +334,7 @@ PKG_CONFIG_SYSROOT_DIR=/
               **remove the **BUILDQT5** dir**
                   *recreate it then re-run qt configure again* 
  
-*For configure help see: "qtbase/config_help.txt"*
+*For qt configure help see: "qtbase/config_help.txt"*
 
 
 ```
