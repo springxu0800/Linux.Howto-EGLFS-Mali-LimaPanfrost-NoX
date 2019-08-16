@@ -155,7 +155,7 @@ meson build \
 *Observe output*
 
 *Select "enter" key if needed.*
-
+*Example mesa build configuration output*
 ```
 Message: Configuration summary:
                 prefix:          /usr
