@@ -392,11 +392,11 @@ cd BUILDQT5
 *Carefully observe output summary and make changes or fix errors/deps as needed.*
 *eg, perhaps you dont like all the input support, so you remove the stanzas*
 
-``
+```
 -libinput \
 
 -mtdev \
-``
+```
 
 *Clean the builddir and re-run*
 *Any changes you make should make you reset the configure and re-run fresh*
