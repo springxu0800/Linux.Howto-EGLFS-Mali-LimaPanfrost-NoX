@@ -654,7 +654,7 @@ Referenced Sources:
 
 
 
-    ![Tux, the Linux mascot](/assets/images/Tux-shaded.svg)
+    ![Tux, the Linux mascot](/Tux-shaded.svg)
 
 
 
