@@ -410,7 +410,7 @@ cd BUILDQT5
 
 *Clean the builddir and re-run*
 *Any changes you make should make you reset the configure and re-run fresh*
-**If I'm being redundant its because I want to save you un-needed time/trouble.**
+**If I'm being pedantic or redundant its because I want to save you un-needed time/trouble.**
 *Make any adjustments needed, cd .. , remove BUILDQT5 dir, recreate BUILDQT5 *
 *re-run configure statement again, corrected as needed, eg,:*
     **QUICK CLEAN cmds**
