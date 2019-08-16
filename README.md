@@ -1,5 +1,5 @@
 # RPI-NOX-VC4 
-Howto: build DRM/MESA/GSTREAMER/KMSCUBE/QT5/MYTHTV with VC4,  without X11 for RPi3/4
+Howto: build DRM/MESA/KMSCUBE/QT5/MYTHTV with VC4,  without X11 for RPi3/4
 aka VC4-NOX-KIT
 
 This guide was made for Debian aarch64 / arm64, adjust to your OS and ARCH as needed, 
