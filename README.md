@@ -119,12 +119,11 @@ cd ~/VC4-NOX-KIT
 *This section complete
 ---
 
-
-
-
 ## MESA
 
+
 *Not sure which HEADER EXCLUSION METHOD is needed, so all for now*
+
 
 ```
 
@@ -447,12 +446,11 @@ cd .. && rm -rfv BUILDQT5 && mkdir -v BUILDQT5 && cd BUILDQT5
 
 ```
 screen -aX make -jX
-
 ```
 
 
-###SKIP DOWN IF NOT COMPILING ON 64BIT###
-###QT DEBIAN AARCH 64BIT BUG###
+### SKIP DOWN IF NOT COMPILING ON 64BIT
+### QT DEBIAN AARCH 64BIT BUG
 
                                                                                                                                                                                                                    
 
@@ -554,7 +552,7 @@ and will work compatibly for the a72 rpi4 as well.
 
 
 
-###64BIT BUGS END SECTION###
+#### 64BIT BUGS END SECTION
 
 
 
