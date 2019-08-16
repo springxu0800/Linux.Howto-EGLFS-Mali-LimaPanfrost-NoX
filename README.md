@@ -441,8 +441,7 @@ screen -aX make -jX
 
 ### QT DEBIAN AARCH 64BIT BUG
   ### IF YOU ARE ON 32BIT OS, SKIP DOWN TO THE SECTION TITLED:
-  
-    **## Continuing QT5 install section.**
+   ## Continuing QT5 install section.
   
                                                                                                                                                                                                    
 *You might get an error like so or similiar:*
