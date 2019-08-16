@@ -475,7 +475,7 @@ cp -av qmake.conf qmake.conf.original
 
 ```
 sed -i 's/-mfpu=crypto-neon-fp-armv8//g' qmake.conf
-sed -i 's/hard-float//g' qmake.conf
+sed -i 's/hard-float/aarch64/g' qmake.conf
 ```
 
 *make a patch example*
