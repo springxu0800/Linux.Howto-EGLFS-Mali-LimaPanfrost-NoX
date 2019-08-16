@@ -104,7 +104,7 @@ unset DESTDIR
 
 
 *You can inspect the installed dirs or tar.xz* 
-*and/or optionally install it local too*
+*and/or **OPTIONALLY** install it local too*
 
 ```
 cd drm
@@ -214,7 +214,7 @@ unset DESTDIR
 
 *select keyboard key "enter" if needed*
   *You can inspect the installed dirs or tar.xz* 
-    *and/or optionally install it local too*
+    *and/or **OPTIONALLY** install it local too*
 
 ```
 cd  mesa
@@ -271,7 +271,7 @@ unset DESTDIR
 
 *Select keyboard key "enter" if needed*
   *You can inspect the installed dirs or tar.xz* 
-    *and/or optionally install it local too*
+    *and/or **OPTIONALLY** install it local too*
 
 ~~~
 cd  kmscube
@@ -572,7 +572,7 @@ unset DESTDIR
 * select keyboard key "enter" if needed
 
 * You can inspect the installed dirs or tar.xz 
-* and/or optionally install it local too, after DESTDIR is unset.
+**and/or **OPTIONALLY** install it local too*, since DESTDIR is unset.
 
 ```
 
