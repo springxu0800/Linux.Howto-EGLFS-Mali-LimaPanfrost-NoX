@@ -111,9 +111,8 @@ cd drm
 sudo -E ninja -C build install
 ```
 
-
+*FINISH UP DRM BUILD
 *change dir
-
 ```
 cd ~/VC4-NOX-KIT 
 ```
@@ -222,7 +221,7 @@ sudo -E ninja -C build install
 ```
 *select keyboard key "enter"*
 
-*Go back to main build dir*
+*FINISH UP and Go back to main build dir*
 
 ```
 cd ~/VC4-NOX-KIT 
@@ -292,7 +291,7 @@ sudo -E ninja -C build install
 ```
 
 
-*Go back to main build dir*
+*Finish and Go back to main build dir*
 
 ```
 cd ~/VC4-NOX-KIT 
