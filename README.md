@@ -31,7 +31,7 @@ mkdir -pv ~/VC4-NOX-KIT && cd ~/VC4-NOX-KIT
 
 
 ---
-#DRM##
+##DRM##
 
 ```
 mkdir -pv DRM && cd DRM
