@@ -1,5 +1,5 @@
 # RPI-NOX-VC4 
-Howto: build DRM/MESA/KMSCUBE/QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.
+Howto: build DRM,MESA,KMSCUBE and QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.
 
 aka VC4-NOX-KIT
 
