@@ -304,6 +304,10 @@ cd ~/VC4-NOX-KIT
 
 ---
 
+*The next section is intensive, if you don't have the above working properly, wait till you do. Nothing more
+frustrating than building a huge project incrementally that fails incrementally and randomly. Build in stages.
+
+
 ## QT-5.9.8
 *Change your PREFIX/LIBDIR and/or CROSS COMPILE OPTIONS as needed, as this is setup for*
 *native compiles.*
