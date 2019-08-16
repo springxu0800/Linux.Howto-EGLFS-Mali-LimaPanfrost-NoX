@@ -1,12 +1,12 @@
-# HOWTO:RPI-NOX-VC4 
+# HOWTO:RPI-NOX-VC4
+---
 
-*Build DRM,MESA,KMSCUBE and QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.
+*Building DRM,MESA,KMSCUBE and QT5 with VC4,  without X11 for RPi3/4 32bit or 64bit.
 
 
 *This guide was made for Debian aarch64 / arm64, adjust to your OS and ARCH/Bitness as needed, 
 
-*For Example, for Raspbian,
-*Change:
+*For Example, for Raspbian, change:
 ```
   --libdir=/usr/lib/aarch64-linux-gnu 
 ```
