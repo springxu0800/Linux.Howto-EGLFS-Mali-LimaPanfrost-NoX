@@ -560,12 +560,13 @@ unset DESTDIR
 * select keyboard key "enter" if needed
 
 * You can inspect the installed dirs or tar.xz 
-* and/or optionally install it local too
+* and/or optionally install it local too, after DESTDIR is unset.
 
 ```
 
 cd  qtbase
 make install
+
 
 ```
 
