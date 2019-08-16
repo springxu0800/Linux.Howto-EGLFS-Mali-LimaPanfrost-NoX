@@ -153,7 +153,7 @@ meson build \
 *Observe output
 *Select "enter" key if needed.
 
-
+```
 Message: Configuration summary:
                 prefix:          /usr
         libdir:          lib/aarch64-linux-gnu
@@ -180,7 +180,7 @@ Message: Configuration summary:
         HUD lmsensors:   no
         
         Shared-glapi:    yes
-
+```
 
 *Build mesa and install it to ~/VC4-NOX-KIT/MESA/mesa-$git_describe_tags_DIR-rpi-vc4
 
