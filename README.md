@@ -81,6 +81,7 @@ ninja -C build install
 ```
 
 *select keyboard key "enter" if needed*
+
 *make a tar.xz*
 
 
