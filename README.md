@@ -592,11 +592,10 @@ make install
 *Go back to main qt build dir
 
 ```
-
 cd ~/VC4-NOX-KIT/QT 
-
 ```
 
+```
 ***BEGIN THIS SECTION IS INCOMPLETE***
 
 ```
@@ -616,7 +615,7 @@ cd QTTOOLS
 
 #Setup Env/Test and run qtdiags
 ***END THIS SECTION IS INCOMPLETE***
-
+```
 
 
 
