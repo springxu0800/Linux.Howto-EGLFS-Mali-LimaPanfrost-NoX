@@ -127,6 +127,7 @@ cd ~/VC4-NOX-KIT
 
 
 *Not sure which HEADER EXCLUSION METHOD is needed, so all for now*
+*One/or all of them inserts itself into the pkg-config .pc files, that is the correct one!*
 ```
 CPPFLAGS=-DMESA_EGL_NO_X11_HEADERS 
 CFLAGS=-DMESA_EGL_NO_X11_HEADERS
