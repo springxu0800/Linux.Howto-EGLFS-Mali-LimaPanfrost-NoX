@@ -59,19 +59,20 @@ meson build \
 *Select keyboard key "enter"*
 
 *Look for this in your output*
-        Message: libdrm will be compiled with:
+```
+    Message: libdrm will be compiled with:
 
         Message:   libkms         true
         Message:   VC4 API        true
+```
 
-
-*Build drm 
+*Build drm* 
 
 ```
 ninja -C build
 ```
 
-*Install drm to ~/VC4-NOX-KIT/DRM/$git_describe_tags_DIR-rpi-vc4
+*Install drm to ~/VC4-NOX-KIT/DRM/$git_describe_tags_DIR-rpi-vc4*
 
 ```
 export DESTDIR=~/VC4-NOX-KIT/DRM/`git describe --tags --always`-rpi-vc4 
@@ -98,8 +99,8 @@ unset DESTDIR
    * plus more i didnt try*
 
 
-*You can inspect the installed dirs or tar.xz 
-*and/or optionally install it local too
+*You can inspect the installed dirs or tar.xz* 
+*and/or optionally install it local too*
 
 ```
 cd drm
@@ -120,7 +121,7 @@ cd ~/VC4-NOX-KIT
 ## MESA
 
 
-*Not sure which HEADER EXCLUSION METHOD is needed, so all for now
+*Not sure which HEADER EXCLUSION METHOD is needed, so all for now*
 ```
 CPPFLAGS=-DMESA_EGL_NO_X11_HEADERS 
 CFLAGS=-DMESA_EGL_NO_X11_HEADERS
@@ -150,8 +151,9 @@ meson build \
 
 ```
 
-*Observe output
-*Select "enter" key if needed.
+*Observe output*
+
+*Select "enter" key if needed.*
 
 ```
 Message: Configuration summary:
@@ -182,7 +184,7 @@ Message: Configuration summary:
         Shared-glapi:    yes
 ```
 
-*Build mesa and install it to ~/VC4-NOX-KIT/MESA/mesa-$git_describe_tags_DIR-rpi-vc4
+*Build mesa and install it to ~/VC4-NOX-KIT/MESA/mesa-$git_describe_tags_DIR-rpi-vc4*
 
 ```
 ninja -C build
@@ -217,7 +219,7 @@ sudo -E ninja -C build install
 cd ~/VC4-NOX-KIT 
 ```
 
-*MESA section complete
+*MESA section complete*
 
 ---
 
@@ -236,9 +238,9 @@ meson build \
 --libdir=/usr/lib/aarch64-linux-gnu
 ```
 
-*Select keyboard key "enter" if needed
+*Select keyboard key "enter" if needed*
 
-*Build and install it to ~/VC4-NOX-KIT/KMSCUBE/kmscube-$git_describe_tags_DIR-rpi-vc4
+*Build and install it to ~/VC4-NOX-KIT/KMSCUBE/kmscube-$git_describe_tags_DIR-rpi-vc4*
 
 ```
 ninja -C build
@@ -247,9 +249,8 @@ echo Destination Directory = $DESTDIR
 ninja -C build install
 ```
 
-*select keyboard key "enter"
-*make a tar.xz
-
+*select keyboard key "enter" if needed.*
+*make a tar.xz*
 
 
 ```
@@ -258,42 +259,42 @@ tar cJvf `basename $DESTDIR`.tar.xz `basename $DESTDIR`
 unset DESTDIR
 ```
 
-* Select keyboard key "enter" if needed
-* You can inspect the installed dirs or tar.xz 
-* and/or optionally install it local too
+*Select keyboard key "enter" if needed*
+*You can inspect the installed dirs or tar.xz* 
+*and/or optionally install it local too*
 
 ~~~
 cd  kmscube
 sudo -E ninja -C build install
 ~~~
 
-*Select keyboard key "enter"
+*Select keyboard key "enter" if needed*
 
-*Test kmscube by running it and note the second section: OpenGl ES 2.X...
-*This is my latest output
-
+*Test kmscube by running it and note the second section: OpenGl ES 2.X...*
+*This is my latest output*
+```
     OpenGL ES 2.x information:
       version: "OpenGL ES 3.0 Mesa 19.2.0-devel (git-861c2b8d31)"
       shading language version: "OpenGL ES GLSL ES 3.00"
       vendor: "Broadcom"
       renderer: "V3D 4.2"
       extensions: "GL_EXT_blend_minmax GL_EXT_multi_draw_arrays GL_EXT_t...
+```
 
 
-
-*Go back to main build dir
+*Go back to main build dir*
 
 ```
 cd ~/VC4-NOX-KIT 
 ```
 
-*KMS section complete
+*KMS section complete*
 
 ---
 
 ## QT-5.9.8
-*Change your PREFIX/LIBDIR or CROSS COMPILE OPTIONS as needed,this is setup for
-native compiles.
+*Change your PREFIX/LIBDIR or CROSS COMPILE OPTIONS as needed,this is setup for*
+*native compiles.*
 
 ```
 mkdir -v ~/VC4-NOX-KIT/QT
@@ -388,19 +389,20 @@ cd BUILDQT5
 ```
 
 
-*Carefully observe output summary and make changes or fix errors/deps as needed.
-*eg, perhaps you dont like all the input support, so you remove the stanzas
+*Carefully observe output summary and make changes or fix errors/deps as needed.*
+*eg, perhaps you dont like all the input support, so you remove the stanzas*
 
 ``
 -libinput \
+
 -mtdev \
 ``
 
-*Clean the builddir and re-run
-*Any changes you make should make you reset the configure and re-run fresh
-*If I'm being redundant its because I want to save you un-needed time/trouble.
-*Make any adjustments needed, cd .. , remove BUILDQT5 dir, recreate BUILDQT5 
-*re-run configure statement again, corrected as needed, eg,:
+*Clean the builddir and re-run*
+*Any changes you make should make you reset the configure and re-run fresh*
+**If I'm being redundant its because I want to save you un-needed time/trouble.**
+*Make any adjustments needed, cd .. , remove BUILDQT5 dir, recreate BUILDQT5 *
+*re-run configure statement again, corrected as needed, eg,:*
     **QUICK CLEAN cmds**
 
 ```
@@ -408,14 +410,14 @@ cd .. && rm -rfv BUILDQT5 && mkdir -v BUILDQT5 && cd BUILDQT5
 
 ```
 
-**The above cmd will blow out your old BUILDQT5 dir and reset you up for a new config run.
+**The above cmd will blow out your old BUILDQT5 dir and reset you up for a new config run.**
 
-*Then, run configure again* and then *build* or *fix* *reset* *repeat* as-needed.
+*Then, run configure again* and then *build* or *fix* *reset* *repeat* as-needed.*
 
 **Once the configuration is perfect for you continue on and build it**
 
-*Better start a screen to build this in, so it doesnt die over a link on you.
-*Change -jX below, to -j(NCPUS) eg, -j2 for dual core or j4 for quad core cpus, etc.
+*Better start a screen to build this in, so it doesnt die over a link on you.*
+*Change -jX below, to -j(NCPUS) eg, -j2 for dual core or j4 for quad core cpus, etc.*
 
 ```
 screen -aX make -jX
@@ -425,7 +427,7 @@ screen -aX make -jX
   ### SKIP DOWN IF NOT COMPILING ON 64BIT
                                                                                                                                                                                                             
 
-*You might get an error like so or similiar:
+*You might get an error like so or similiar:*
 
 ```
 Project ERROR: Cannot run target compiler '/usr/bin/g++'. Output:
@@ -452,19 +454,19 @@ options designed for the arm8 in 32bit mode, along with removing the
 cd ../qtbase/mkspecs/devices/linux-rasp-pi3-vc4-g++/
 cp -av qmake.conf qmake.conf.original
 ```
-*inline edit qmake.conf
+*inline edit qmake.conf*
 
 ```
 sed -i 's/-mfpu=crypto-neon-fp-armv8//g' qmake.conf
 sed -i 's/hard-float//g' qmake.conf
 ```
 
-*make a patch example
+*make a patch example*
 ```
 diff -Nuar qmake.conf.original qmake.conf > ~/VC4-NOX-KIT/QT/qt5-debian-aarch64_linux-rasp-pi3-vc4-g++_qmake.conf.patch
 ```
 
-*patch contents example
+*patch contents example*
 
 ```
 --- qmake.conf.original	2019-08-16 09:51:19.544346156 -0400
@@ -531,7 +533,7 @@ and will work compatibly for the a72 rpi4 as well.
 
 
 
-*Install QT5 to ~/VC4-NOX-KIT/QT/qt-$git_describe_tags_DIR-rpi-vc4
+*Install QT5 to ~/VC4-NOX-KIT/QT/qt-$git_describe_tags_DIR-rpi-vc4*
 
 ```
 
