@@ -7,6 +7,9 @@
 **This guide was written with for building as a regular 'user'. 
 For "OPTIONAL" system installation using 'sudo', you will likely need your root pwd unless your admin has authorized your sudo account otherwise.**
 
+*Make sure you dont skip steps you dont understand, especially the "unset DESTDIR" stanza after each section builds. That
+is critical and always right before the option to install on system.*
+
 
 *This guide was made for Debian aarch64 / arm64, adjust to your OS and ARCH/Bitness as needed.* 
 
