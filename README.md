@@ -332,7 +332,7 @@ PKG_CONFIG_SYSROOT_DIR=/
 *Setup a shadow build dir called **"BUILDQT5"** 
   *which makes it easy to restart.*
      **If a configuration OPTION from QT is missing,* 
-        **LIFE IS SHORT, Do Not re-run it and/or risk it not picking up changes.**
+        **LIFE IS SHORT, Do Not 'JUST re-run' it and/or risk it not picking up changes.**
            *Install your deps/ldconfig*
               **remove the **BUILDQT5** dir**
                   *recreate it then re-run qt configure again* 
