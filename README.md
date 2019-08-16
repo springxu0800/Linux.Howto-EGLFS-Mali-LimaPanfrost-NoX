@@ -597,7 +597,7 @@ cd ~/VC4-NOX-KIT/QT
 
 ```
 
-
+*THIS POINT DOWN IS UNFINISHED*
 
 ```
 
