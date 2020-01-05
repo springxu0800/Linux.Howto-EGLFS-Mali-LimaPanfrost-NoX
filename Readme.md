@@ -1,3 +1,3 @@
 
-<https://github.com/kelsieflynn/HOWTO-MALI-LIMAPANFROST-NOX-ROCKCHIP/wiki>
+<https://github.com/kelsieflynn/Linux.Howto-Mali-LimaPanfrost-NoX-Rockchip/wiki>
 
