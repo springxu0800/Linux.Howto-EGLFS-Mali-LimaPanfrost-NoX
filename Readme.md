@@ -1,3 +1,3 @@
 
-<https://github.com/kelsieflynn/Linux.Howto-Mali-LimaPanfrost-NoX/wiki>
+<https://github.com/kelsieflynn/Linux.Howto-EGLFS-Mali-LimaPanfrost-NoX/wiki>
 
