@@ -1,3 +1,3 @@
 
-<https://github.com/kelsieflynn/HOWTO-RPI-NOX-VC4/wiki>
+<https://github.com/kelsieflynn/HOWTO-MALI-LIMAPANFROST-NOX-ROCKCHIP/wiki>
 
